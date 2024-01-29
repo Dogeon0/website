@@ -1,0 +1,74 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+.colorsDontUSE{
+  color:#262322;
+  color: #002770;
+  color: #abcad4;
+  color: #61d3d3;
+  color: #0e62c2;
+  color: #0a478d;
+  color: #61d3d3;
+}
+
+body {
+  background-color:#262322;
+  color: #abcad4;
+  font-family: Verdana;
+  background-image: url("img/background.png");
+  background-size: cover;
+}
+
+.title {
+  margin: 0px;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.proj{
+  text-align: center;
+  font-size: 60px;
+  color: #61d3d3;
+  text-shadow: -3px 0px 0px #0a478d;
+}
+
+.projects-container {
+  width: 1200px ; 
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+.projects-child {
+  display:inline-block;
+  border: 0px;
+  width: 552px;
+  margin:0 24px;
+}
+
+
+/* TOP NAVIGATION BAR */
+  .topnav {
+    background-color: #002770;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+ 
+  .topnav a {
+    float: left;
+    color: #61d3d3;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .topnav a:hover {
+    background-color: #0e62c2;
+    color: rgb(255, 255, 255);
+  }
+  .topnav a.active {
+    background-color: #0a478d;
+    color: #61d3d3;
+  }
