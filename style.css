@@ -20,11 +20,20 @@ body {
   background-size: cover;
 }
 
+.genericCenter {
+  text-align: center;
+}
+
 .title {
   margin: 0px;
   padding: 20px;
   text-align: center;
   
+}
+.titleSecret{
+  text-align: center;
+  margin-top: 200px;
+  color: #61d3d3;
 }
 
 .proj{
