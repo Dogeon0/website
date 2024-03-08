@@ -2,21 +2,19 @@
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
 
-.colorsDontUSE{
-  color:#262322;
-  color: #002770;
-  color: #abcad4;
-  color: #61d3d3;
-  color: #0e62c2;
-  color: #0a478d;
-  color: #61d3d3;
+.dontUse {
+  color:#03045E;
+  color:#023E8A;
+  color:#0096C7;
+  color:#00B4D8;
+  color:#CAF0F8;
 }
 
 body {
-  background-color:#262322;
-  color: #abcad4;
-  font-family: Verdana;
-  background-image: url("img/background.png");
+  background-color:#0096C7;
+  color: #CAF0F8;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
   background-size: cover;
 }
 
@@ -24,10 +22,23 @@ body {
   text-align: center;
 }
 
+.uhh {
+  background-color: #03045E;
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.text{
+  font-size: 25px;
+  color: #03045E;
+}
 .title {
   margin: 0px;
-  padding: 20px;
+  padding: 0px;
   text-align: center;
+  font-size: 70px;
+  width: 100%;
   
 }
 .titleSecret{
@@ -39,8 +50,8 @@ body {
 .proj{
   text-align: center;
   font-size: 60px;
-  color: #61d3d3;
-  text-shadow: -3px 0px 0px #0a478d;
+  color: #03045E;
+  
 }
 
 .projects-container {
@@ -53,15 +64,19 @@ body {
   display:inline-block;
   border: 0px;
   width: 552px;
-  margin:0 24px;
+  margin:0 2px;
 }
 
 
 /* TOP NAVIGATION BAR */
   .topnav {
-    background-color: #002770;
+    background-color: #03045E;
     overflow: hidden;
     border-radius: 10px;
+    
+    margin-top: 0px;
+    margin-left: 39.35%;
+    margin-right: 39.35%;
   }
  
   .topnav a {

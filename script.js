@@ -5,3 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
         projSection.scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+
+function bruh(){
+
+}
