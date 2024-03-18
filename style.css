@@ -6,7 +6,7 @@
   color:#03045E;
   color:#023E8A;
   color:#0096C7;
-  color:#00B4D8;
+  color:#28e6ff;
   color:#CAF0F8;
 }
 
@@ -20,7 +20,8 @@ body {
   background-attachment: fixed;
   height:100%;
   width:100%;
-  overflow: hidden;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll; /* Show vertical scrollbar */
 }
 .footer {
   background-color: rgba(0, 0, 0, 0.25);
@@ -53,7 +54,7 @@ body {
   height:100%;
 }
 .space {
-  height: 425px;
+  height: 500px;
 }
 .genericCenter {
   text-align: center;
@@ -98,11 +99,11 @@ body {
  
   .topnav a {
     float: left;
-    color: #03045E;
+    color: #28e6ff;
     text-align: center;
     padding: 16px 20px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   .topnav a:hover {
