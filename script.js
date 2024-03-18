@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('projLink').addEventListener('click', function(e) {
-        e.preventDefault();
-        const projSection = document.getElementById('projSection');
-        projSection.scrollIntoView({ behavior: 'smooth' });
-    });
+    var audio = document.getElementById("audi");
+    audio.muted = false;
+    audio.volume = 0.1;
 });
+
 
 
 function bruh(){
