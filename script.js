@@ -20,10 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     
 });
-
- 
-  var player;
-  function onYouTubeIframeAPIReady() {
+var player;
+function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
       height: '0',
       width: '0',
@@ -36,12 +34,48 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
-
-  function onPlayerReady(event) {
+function onPlayerReady(event) {
     setTimeout(function() {
       event.target.playVideo(); 
       event.target.setVolume(10);
     }, 3000);
   }
+function isGetUserMediaSupported() {
+    return !!(navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
+  }
+function isAutoplayAllowed() {
+    return new Promise((resolve, reject) => {
 
+      if (isGetUserMediaSupported()) {
 
+        navigator.getUserMedia({ audio: true, video: true },
+          function(stream) {
+            console.log('Permissions granted: Audio and Video');
+            resolve(true);
+          },
+          function(error) {
+            console.error('Permissions denied:', error);
+            resolve(false);
+          }
+        );
+      } else {
+        console.error('getUserMedia is not supported in this browser');
+        reject(new Error('getUserMedia is not supported'));
+      }
+    });
+  }
+async function displayFloatingWindow() {
+    var floatingWindow = document.getElementById('floating-window');
+    if (!(await isAutoplayAllowed())) {
+      floatingWindow.style.display = 'block';
+    }
+  }
+function enableAutoplay() {
+    var floatingWindow = document.getElementById('floating-window');
+    floatingWindow.style.display = 'none';
+  }
+
+window.onload = function() {
+    displayFloatingWindow();
+  };
+  
