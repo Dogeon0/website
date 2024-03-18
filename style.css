@@ -22,11 +22,39 @@ body {
   width:100%;
   overflow: hidden;
 }
+.footer {
+  background-color: rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 100%;
+  margin-left: -8px;
+}
+
+
+.fullscreen-gif-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999; /* Ensure the GIF is behind other content */
+  pointer-events: none;
+}
+
+.fullscreen-gif {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the GIF covers the entire screen */
+  pointer-events: none;
+}
+
+
 #bg {
   width:100%;
   height:100%;
 }
-
+.space {
+  height: 425px;
+}
 .genericCenter {
   text-align: center;
 }
